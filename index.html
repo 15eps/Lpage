@@ -10,104 +10,113 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
     body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 2em 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 0.5em 0 1em;
-    font-size: 1.2em;
-}
-
-.whatsapp-button {
-    background-color: #25D366;
-    color: white;
-    padding: 1em 2em;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    margin: 1em 0;
-    font-size: 1.2em;
-}
-
-.whatsapp-button i {
-    margin-right: 0.5em;
-}
-
-#services {
-    padding: 2em 1em;
-    background-color: #ffffff;
-}
-
-#services h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-.service-item {
-    background: white;
-    padding: 1.5em;
-    margin: 1em 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-}
-
-.service-item h3 {
-    margin-top: 0;
-    color: #4CAF50;
-    margin-left: 1em;
-}
-
-.service-item p {
-    margin-left: 1em;
-}
-
-.service-icon {
-    font-size: 2.5em;
-    color: #4CAF50;
-}
-
-#contact {
-    padding: 2em 1em;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-#contact h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-#contact p {
-    font-size: 1.2em;
-    margin: 0.5em 0;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 2em 0;
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    
+    header p {
+        margin: 0.5em 0 1em;
+        font-size: 1.2em;
+    }
+    
+    .whatsapp-button {
+        background-color: #25D366;
+        color: white;
+        padding: 1em 2em;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 1em 0;
+        font-size: 1.2em;
+    }
+    
+    .whatsapp-button i {
+        margin-right: 0.5em;
+    }
+    
+    #services {
+        padding: 2em 1em;
+        background-color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    #services h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+        flex-basis: 100%;
+    }
+    
+    .service-item {
+        background: white;
+        padding: 1.5em;
+        margin: 1em 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-basis: calc(25% - 20px);
+    }
+    
+    .service-item h3 {
+        margin-top: 0;
+        color: #4CAF50;
+        margin-left: 1em;
+    }
+    
+    .service-item p {
+        margin-left: 1em;
+    }
+    
+    .service-icon {
+        font-size: 2.5em;
+        color: #4CAF50;
+    }
+    
+    #contact {
+        padding: 2em 1em;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+    
+    #contact h2 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    
+    #contact p {
+        font-size: 1.2em;
+        margin: 0.5em 0;
+    }
+    
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+    }
       </style>
 
   <script type="application/ld+json">
@@ -327,53 +336,73 @@ footer {
     <section id="services">
         <h2>Nossos Serviços</h2>
         <div class="service-item">
+         <div>
             <i class="fas fa-bolt service-icon"></i>
             <h3>Instalações Elétricas</h3>
+            </div>
             <p>Realizamos instalações elétricas completas para residências, comércios e indústrias, seguindo todas as normas de segurança.</p>
         </div>
         <div class="service-item">
+          <div>
             <i class="fas fa-tools service-icon"></i>
             <h3>Manutenção Preventiva e Corretiva</h3>
+            </div>
             <p>Oferecemos serviços de manutenção para garantir que seu sistema elétrico funcione perfeitamente e evitar problemas futuros.</p>
         </div>
         <div class="service-item">
+         <div>
             <i class="fas fa-phone-volume service-icon"></i>
             <h3>Atendimento de Emergência 24h</h3>
+            </div>
             <p>Estamos disponíveis 24 horas por dia para resolver qualquer emergência elétrica, garantindo sua segurança e conforto.</p>
         </div>
         <div class="service-item">
+            <div>
             <i class="fas fa-shower service-icon"></i>
             <h3>Troca de Chuveiro</h3>
+            </div>
             <p>Instalação e troca de chuveiros elétricos, garantindo a segurança e o funcionamento adequado.</p>
         </div>
         <div class="service-item">
+           <div class="service-header">
             <i class="fas fa-burn service-icon"></i>
             <h3>Reparação de Fios Queimados</h3>
+            </div>
             <p>Identificação e reparação de fios queimados, evitando riscos de incêndio e garantindo a segurança do seu ambiente.</p>
         </div>
         <div class="service-item">
+           <div class="service-header">
             <i class="fas fa-plug service-icon"></i>
             <h3>Instalação de Tomadas e Interruptores</h3>
+            </div>
             <p>Instalação e manutenção de tomadas e interruptores, atendendo às suas necessidades elétricas.</p>
         </div>
         <div class="service-item">
+           <div class="service-header">
             <i class="fas fa-lightbulb service-icon"></i>
             <h3>Instalação de Luminárias e Ventiladores</h3>
+            </div>
             <p>Instalação de luminárias, ventiladores de teto e de parede, garantindo um ambiente iluminado e confortável.</p>
         </div>
         <div class="service-item">
+            <div>
             <i class="fas fa-home service-icon"></i>
             <h3>Automação Residencial</h3>
+            </div>
             <p>Serviços de automação para residências, proporcionando maior comodidade e eficiência energética.</p>
         </div>
         <div class="service-item">
+            <div>
             <i class="fas fa-door-open service-icon"></i>
             <h3>Instalação de ponto para Motores de Portão</h3>
+            </div>
             <p>Instalação de ponto para Motores de portões automáticos, garantindo segurança e praticidade.</p>
         </div>
         <div class="service-item">
+            <div>
             <i class="fas fa-plug service-icon"></i>
             <h3>Troca de Disjuntores</h3>
+            </div>
             <p>Substituição de disjuntores defeituosos, garantindo a proteção do seu sistema elétrico.</p>
         </div>
         <div class="service-item">
@@ -382,13 +411,17 @@ footer {
             <p>Diagnóstico e resolução de problemas que causam queda de disjuntores, evitando interrupções no fornecimento de energia.</p>
         </div>
         <div class="service-item">
+            <div>
             <i class="fas fa-charging-station service-icon"></i>
             <h3>Instalação de Ponto de Recarga de Carro Elétrico</h3>
+            </div>
             <p>Instalação de pontos de recarga para veículos elétricos, oferecendo praticidade e eficiência para a mobilidade elétrica.</p>
         </div>
         <div class="service-item">
+            <div>
             <i class="fas fa-shield-alt service-icon"></i>
             <h3>Instalação de DPS e IDR/DR</h3>
+            </div>
             <p>Instalação de Dispositivos de Proteção contra Surtos (DPS) e Disjuntores Diferenciais Residuais (IDR/DR) conforme as normas técnicas.</p>
         </div>
     </section>
